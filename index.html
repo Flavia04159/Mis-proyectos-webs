@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Gourmet - Restaurante de Alta Cocina</title>
+  <meta name="description" content="El Gourmet - Restaurante de alta cocina con los mejores sabores y experiencias gastronómicas. Reserve su mesa ahora.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chef-hat">
+          <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"></path>
+          <line x1="6" x2="18" y1="17" y2="17"></line>
+        </svg>
+        <span>El Gourmet</span>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#reservaciones">Reservaciones</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>El Gourmet</h1>
+        <p>Una experiencia culinaria excepcional con los sabores más refinados</p>
+        <a href="#reservaciones" class="btn">Reservar Ahora</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Nuestro Menú</h2>
+        
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="entradas">Entradas</button>
+          <button class="category-btn" data-category="principales">Platos Principales</button>
+          <button class="category-btn" data-category="postres">Postres</button>
+          <button class="category-btn" data-category="bebidas">Bebidas</button>
+        </div>
+        
+        <div class="menu-items" id="entradas">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1608835291093-394b0c943a75?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Carpaccio de Res">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Carpaccio de Res</h3>
+                <span class="price">€14.50</span>
+              </div>
+              <p>Finas láminas de res con aceite de oliva, limón, alcaparras y parmesano</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tartar de Atún">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Tartar de Atún</h3>
+                <span class="price">€16.00</span>
+              </div>
+              <p>Atún fresco cortado a cuchillo con aguacate, sésamo y salsa ponzu</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1505575967455-40e256f73376?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Burrata con Tomates">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Burrata con Tomates</h3>
+                <span class="price">€13.00</span>
+              </div>
+              <p>Burrata cremosa con tomates cherry, albahaca fresca y reducción de balsámico</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-items" id="principales" style="display: none;">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Risotto de Setas Silvestres">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Risotto de Setas Silvestres</h3>
+                <span class="price">€22.00</span>
+              </div>
+              <p>Cremoso risotto con variedad de setas silvestres y trufa negra</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Solomillo Wellington">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Solomillo Wellington</h3>
+                <span class="price">€32.00</span>
+              </div>
+              <p>Solomillo de ternera envuelto en hojaldre con duxelle de champiñones</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lubina a la Sal">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Lubina a la Sal</h3>
+                <span class="price">€28.00</span>
+              </div>
+              <p>Lubina fresca cocinada en costra de sal marina con verduras de temporada</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-items" id="postres" style="display: none;">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Soufflé de Chocolate">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Soufflé de Chocolate</h3>
+                <span class="price">€10.00</span>
+              </div>
+              <p>Soufflé de chocolate negro con corazón líquido y helado de vainilla</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Crème Brûlée">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Crème Brûlée</h3>
+                <span class="price">€8.50</span>
+              </div>
+              <p>Clásica crema catalana con azúcar caramelizado</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tarta de Limón Merengada">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Tarta de Limón Merengada</h3>
+                <span class="price">€9.00</span>
+              </div>
+              <p>Tarta de limón con merengue italiano flambeado</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="menu-items" id="bebidas" style="display: none;">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Selección de Vinos">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Selección de Vinos</h3>
+                <span class="price">Desde €6.00</span>
+              </div>
+              <p>Amplia carta de vinos nacionales e internacionales</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Cócteles de Autor">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Cócteles de Autor</h3>
+                <span class="price">Desde €12.00</span>
+              </div>
+              <p>Creaciones exclusivas de nuestro mixólogo</p>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Café Especial">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Café Especial</h3>
+                <span class="price">Desde €3.50</span>
+              </div>
+              <p>Selección de cafés de origen único</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios" class="hours-section">
+      <div class="container">
+        <h2>Horarios</h2>
+        
+        <div class="hours-card">
+          <div class="hours-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="clock-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <h3>Horario de Apertura</h3>
+          </div>
+          
+          <table class="hours-table">
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Almuerzo</th>
+                <th>Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lunes</td>
+                <td>13:00 - 16:00</td>
+                <td>20:00 - 23:30</td>
+              </tr>
+              <tr>
+                <td>Martes</td>
+                <td>13:00 - 16:00</td>
+                <td>20:00 - 23:30</td>
+              </tr>
+              <tr>
+                <td>Miércoles</td>
+                <td>13:00 - 16:00</td>
+                <td>20:00 - 23:30</td>
+              </tr>
+              <tr>
+                <td>Jueves</td>
+                <td>13:00 - 16:00</td>
+                <td>20:00 - 23:30</td>
+              </tr>
+              <tr>
+                <td>Viernes</td>
+                <td>13:00 - 16:00</td>
+                <td>20:00 - 00:00</td>
+              </tr>
+              <tr>
+                <td>Sábado</td>
+                <td>13:00 - 16:30</td>
+                <td>20:00 - 00:00</td>
+              </tr>
+              <tr>
+                <td>Domingo</td>
+                <td>13:00 - 16:30</td>
+                <td>Cerrado</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <div class="hours-note">
+            <p><span>Nota:</span> La cocina cierra 30 minutos antes del horario de cierre.
+            Para grupos grandes, por favor contacte con nosotros con antelación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservaciones" class="reservation-section">
+      <div class="container">
+        <h2>Reservaciones</h2>
+        
+        <div class="reservation-card">
+          <div class="reservation-info">
+            <h3>Información de Reserva</h3>
+            <p>Reserve su mesa en El Gourmet y disfrute de una experiencia gastronómica inolvidable.</p>
+            
+            <div class="info-items">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <div>
+                  <h4>Horario de Reservas</h4>
+                  <p>Almuerzo: 13:00 - 15:00</p>
+                  <p>Cena: 20:00 - 22:00</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <div>
+                  <h4>Grupos Grandes</h4>
+                  <p>Para reservas de más de 8 personas, por favor contáctenos directamente por teléfono.</p>
+                </div>
+              </div>
+              
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <div>
+                  <h4>Política de Cancelación</h4>
+                  <p>Las cancelaciones deben realizarse con al menos 24 horas de antelación.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reservation-form-container">
+            <div id="reservation-success" class="reservation-success" style="display: none;">
+              <div class="success-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h3>¡Reserva Confirmada!</h3>
+              <p>Gracias por su reserva. Hemos enviado un correo de confirmación.</p>
+            </div>
+            
+            <form id="reservation-form" class="reservation-form">
+              <h3>Haga su Reserva</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nombre Completo</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email">Correo Electrónico</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="guests">Número de Personas</label>
+                  <div class="select-wrapper">
+                    <select id="guests" name="guests" required>
+                      <option value="1">1 persona</option>
+                      <option value="2" selected>2 personas</option>
+                      <option value="3">3 personas</option>
+                      <option value="4">4 personas</option>
+                      <option value="5">5 personas</option>
+                      <option value="6">6 personas</option>
+                      <option value="7">7 personas</option>
+                      <option value="8">8 personas</option>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Fecha</label>
+                  <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="time">Hora</label>
+                  <div class="select-wrapper">
+                    <select id="time" name="time" required>
+                      <option value="">Seleccionar hora</option>
+                      <optgroup label="Almuerzo">
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                      </optgroup>
+                      <optgroup label="Cena">
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:00">22:00</option>
+                      </optgroup>
+                    </select>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="occasion">Ocasión (opcional)</label>
+                <input type="text" id="occasion" name="occasion" placeholder="Cumpleaños, Aniversario, etc.">
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Solicitudes Especiales (opcional)</label>
+                <textarea id="message" name="message" rows="3"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-full">Confirmar Reserva</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div class="container">
+        <h2>Contacto</h2>
+        
+        <div class="contact-card">
+          <div class="contact-info">
+            <h3>Información</h3>
+            <div class="contact-details">
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Calle Gourmet 123, Ciudad
+              </p>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                +34 123 456 789
+              </p>
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                info@elgourmet.com
+              </p>
+            </div>
+            
+            <h3>Síguenos</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDI1JzAwLjQiTiAzwrA0MicxMy42Ilc!5e0!3m2!1sen!2ses!4v1620000000000!5m2!1sen!2ses" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen 
+              loading="lazy"
+              title="Ubicación del restaurante">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"></path>
+              <line x1="6" x2="18" y1="17" y2="17"></line>
+            </svg>
+            <span>El Gourmet</span>
+          </div>
+          <p>
+            Experiencia gastronómica de alta cocina con los mejores ingredientes y técnicas culinarias.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <address>
+            <p>Calle Gourmet 123</p>
+            <p>Ciudad, CP 12345</p>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: info@elgourmet.com</p>
+          </address>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#horarios">Horarios</a></li>
+            <li><a href="#reservaciones">Reservaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> El Gourmet. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
